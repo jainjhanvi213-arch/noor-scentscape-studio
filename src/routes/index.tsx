@@ -131,26 +131,15 @@ function Index() {
           <div className="order-1 flex justify-center lg:order-2">
             <div className="relative w-full max-w-md lg:max-w-lg">
               <div className="absolute inset-0 rounded-full bg-gradient-to-br from-gold/20 via-transparent to-rose/10 blur-3xl" />
-              <div
-                className={cn(
-                  "relative overflow-hidden rounded-3xl shadow-luxury transition-opacity duration-700",
-                  isImageLoaded ? "opacity-100" : "opacity-0"
-                )}
-              >
+              <div className="relative overflow-hidden rounded-3xl shadow-luxury">
                 <img
                   src={sarkarNoorHero}
                   alt="Sarkar Noor perfume bottle in warm golden light with rose petals and saffron"
                   width={1024}
                   height={1024}
                   className="w-full object-cover"
-                  onLoad={() => setIsImageLoaded(true)}
                 />
               </div>
-              {!isImageLoaded && (
-                <div className="absolute inset-0 flex items-center justify-center rounded-3xl bg-muted">
-                  <span className="text-sm text-muted-foreground">Loading image…</span>
-                </div>
-              )}
             </div>
           </div>
         </div>
