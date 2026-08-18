@@ -57,7 +57,6 @@ const sizes = [
 
 function Index() {
   const [selectedSize, setSelectedSize] = useState(1);
-  const [isImageLoaded, setIsImageLoaded] = useState(false);
 
   return (
     <div className="min-h-screen bg-background text-foreground">
