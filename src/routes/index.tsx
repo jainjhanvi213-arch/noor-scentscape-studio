@@ -2,7 +2,8 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { ShoppingBag, Star, Truck, ShieldCheck, Sparkles, ChevronRight } from "lucide-react";
 
-import sarkarNoorHero from "@/assets/sarkar-noor-hero.jpg";
+import bottleAsset from "@/assets/sarkar-bottle.png.asset.json";
+import packagingAsset from "@/assets/sarkar-packaging.png.asset.json";
 import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/")({
@@ -21,9 +22,7 @@ export const Route = createFileRoute("/")({
           "Sarkar Noor captures the quiet confidence of modern royalty—warm, refined, and impossible to ignore.",
       },
       { property: "og:type", content: "product" },
-      { property: "og:image", content: sarkarNoorHero },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:image", content: sarkarNoorHero },
     ],
   }),
   component: Index,
@@ -133,8 +132,8 @@ function Index() {
               <div className="absolute inset-0 rounded-full bg-gradient-to-br from-gold/20 via-transparent to-rose/10 blur-3xl" />
               <div className="relative overflow-hidden rounded-3xl shadow-luxury">
                 <img
-                  src={sarkarNoorHero}
-                  alt="Sarkar Noor perfume bottle in warm golden light with rose petals and saffron"
+                  src={bottleAsset.url}
+                  alt="Sarkar Noor chess-king shaped amber perfume bottle with black cap"
                   width={1024}
                   height={1024}
                   className="w-full object-cover"
@@ -209,8 +208,8 @@ function Index() {
         <div className="grid items-center gap-12 lg:grid-cols-2">
           <div className="relative overflow-hidden rounded-3xl shadow-luxury">
             <img
-              src={sarkarNoorHero}
-              alt="Sarkar Noor perfume bottle with golden cap, amber liquid, and rose saffron accents"
+              src={packagingAsset.url}
+              alt="Sarkar Regal parfum bottle beside its brown gift box and cylindrical tube packaging"
               width={1024}
               height={1024}
               loading="lazy"
