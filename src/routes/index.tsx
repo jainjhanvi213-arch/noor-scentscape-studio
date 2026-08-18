@@ -208,8 +208,8 @@ function Index() {
         <div className="grid items-center gap-12 lg:grid-cols-2">
           <div className="relative overflow-hidden rounded-3xl shadow-luxury">
             <img
-              src={sarkarNoorHero}
-              alt="Sarkar Noor perfume bottle with golden cap, amber liquid, and rose saffron accents"
+              src={packagingAsset.url}
+              alt="Sarkar Regal parfum bottle beside its brown gift box and cylindrical tube packaging"
               width={1024}
               height={1024}
               loading="lazy"
