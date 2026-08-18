@@ -132,8 +132,8 @@ function Index() {
               <div className="absolute inset-0 rounded-full bg-gradient-to-br from-gold/20 via-transparent to-rose/10 blur-3xl" />
               <div className="relative overflow-hidden rounded-3xl shadow-luxury">
                 <img
-                  src={sarkarNoorHero}
-                  alt="Sarkar Noor perfume bottle in warm golden light with rose petals and saffron"
+                  src={bottleAsset.url}
+                  alt="Sarkar Noor chess-king shaped amber perfume bottle with black cap"
                   width={1024}
                   height={1024}
                   className="w-full object-cover"
