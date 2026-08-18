@@ -302,7 +302,7 @@ function Index() {
               return (
                 <button className="inline-flex items-center gap-2 rounded-full bg-gold px-10 py-4 text-base font-semibold text-gold-foreground shadow-luxury transition-transform hover:scale-[1.02] active:scale-[0.98]">
                   <ShoppingBag className="h-5 w-5" />
-                  Add to Bag — ${currentSize ? currentSize.price : sizes[0].price}
+                  Add to Bag — ${currentSize ? currentSize.price : sizes[0]!.price}
                 </button>
               );
             })()}
