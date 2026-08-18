@@ -2,7 +2,8 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { ShoppingBag, Star, Truck, ShieldCheck, Sparkles, ChevronRight } from "lucide-react";
 
-import sarkarNoorHero from "@/assets/sarkar-noor-hero.jpg";
+import bottleAsset from "@/assets/sarkar-bottle.png.asset.json";
+import packagingAsset from "@/assets/sarkar-packaging.png.asset.json";
 import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/")({
