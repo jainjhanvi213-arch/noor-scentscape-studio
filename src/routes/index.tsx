@@ -134,8 +134,11 @@ function Index() {
                 <img
                   src={bottleAsset.url}
                   alt="Sarkar Noor chess-king shaped amber perfume bottle with black cap"
-                  width={1024}
-                  height={1024}
+                  width={900}
+                  height={900}
+                  fetchPriority="high"
+                  decoding="async"
+                  sizes="(min-width: 1024px) 32rem, 100vw"
                   className="w-full object-cover"
                 />
               </div>
