@@ -213,9 +213,11 @@ function Index() {
             <img
               src={packagingAsset.url}
               alt="Sarkar Regal parfum bottle beside its brown gift box and cylindrical tube packaging"
-              width={1024}
-              height={1024}
+              width={900}
+              height={900}
               loading="lazy"
+              decoding="async"
+              sizes="(min-width: 1024px) 40rem, 100vw"
               className="w-full object-cover"
             />
           </div>
