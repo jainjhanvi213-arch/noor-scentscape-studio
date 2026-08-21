@@ -2,8 +2,8 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { ShoppingBag, Star, Truck, ShieldCheck, Sparkles, ChevronRight } from "lucide-react";
 
-import bottleAsset from "@/assets/sarkar-bottle.png.asset.json";
-import packagingAsset from "@/assets/sarkar-packaging.png.asset.json";
+import bottleAsset from "@/assets/sarkar-bottle.webp.asset.json";
+import packagingAsset from "@/assets/sarkar-packaging.webp.asset.json";
 import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/")({
@@ -23,6 +23,9 @@ export const Route = createFileRoute("/")({
       },
       { property: "og:type", content: "product" },
       { name: "twitter:card", content: "summary_large_image" },
+    ],
+    links: [
+      { rel: "preload", as: "image", href: bottleAsset.url, fetchpriority: "high" },
     ],
   }),
   component: Index,
@@ -134,8 +137,11 @@ function Index() {
                 <img
                   src={bottleAsset.url}
                   alt="Sarkar Noor chess-king shaped amber perfume bottle with black cap"
-                  width={1024}
-                  height={1024}
+                  width={900}
+                  height={900}
+                  fetchPriority="high"
+                  decoding="async"
+                  sizes="(min-width: 1024px) 32rem, 100vw"
                   className="w-full object-cover"
                 />
               </div>
@@ -210,9 +216,11 @@ function Index() {
             <img
               src={packagingAsset.url}
               alt="Sarkar Regal parfum bottle beside its brown gift box and cylindrical tube packaging"
-              width={1024}
-              height={1024}
+              width={900}
+              height={900}
               loading="lazy"
+              decoding="async"
+              sizes="(min-width: 1024px) 40rem, 100vw"
               className="w-full object-cover"
             />
           </div>
